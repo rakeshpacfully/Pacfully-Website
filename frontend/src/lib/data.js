@@ -34,7 +34,7 @@ export const INDUSTRIES = [
   { name: "Chocolate", icon: "Candy", img: "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=1200" },
   { name: "Apparel", icon: "Shirt", img: "https://images.unsplash.com/photo-1595246007497-15e0ed4b8d96?w=1200" },
   { name: "Ecommerce", icon: "Package", img: "https://images.unsplash.com/photo-1575176647987-4c1a2e598950?w=1200" },
-  { name: "Electronics", icon: "Cpu", img: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200" },
+  { name: "Electronics", icon: "Cpu", img: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200" },
   { name: "Corporate Gifting", icon: "Gift", img: "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=1200" },
 ];
 
@@ -301,7 +301,7 @@ export const INDUSTRIES_DETAIL = [
   { name: "Jewelry", img: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=1600", uses: ["Magnetic ring boxes","Velvet insert trays","Drawer necklace cases","Brand sleeves"], desc: "Heirloom-grade boxes with felt and velvet inserts." },
   { name: "Food & Sweets", img: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=1600", uses: ["Mithai boxes","Bakery cartons","Hamper boxes","Window cartons"], desc: "Food-safe inks and barrier coatings for FSSAI compliance." },
   { name: "Chocolate", img: "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=1600", uses: ["Bar sleeves","Truffle rigid boxes","Pralines tray boxes","Gifting hampers"], desc: "Premium foiling, embossing and tray-sleeve constructions." },
-  { name: "Electronics", img: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600", uses: ["Device rigid boxes","Accessory cartons","Protective inserts","Tech subscription"], desc: "Apple-grade tolerances with EVA and pulp inserts." },
+  { name: "Electronics", img: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1600", uses: ["Device rigid boxes","Accessory cartons","Protective inserts","Tech subscription"], desc: "Apple-grade tolerances with EVA and pulp inserts." },
   { name: "Ecommerce", img: "https://images.unsplash.com/photo-1575176647987-4c1a2e598950?w=1600", uses: ["Mailer boxes","Book wraps","Subscription boxes","Return packaging"], desc: "Tear-strip, double-glue and self-locking constructions for last-mile." },
   { name: "Fashion & Apparel", img: "https://images.unsplash.com/photo-1595246007497-15e0ed4b8d96?w=1600", uses: ["Garment boxes","Shoe boxes","Tissue & ribbon","Carry bags"], desc: "Premium garment boxes with custom tissue and ribbon." },
   { name: "Corporate Gifting", img: "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=1600", uses: ["Hamper boxes","Diwali sets","Welcome kits","Joining hampers"], desc: "End-to-end hamper design, sourcing and kitting." },
