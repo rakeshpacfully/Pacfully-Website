@@ -61,7 +61,7 @@ html.light {
   --p-text-faint: rgba(13,13,13,0.4);
   --p-border: rgba(13,13,13,0.06);
   --p-border-strong: rgba(13,13,13,0.18);
-  --p-card-shadow: -10px -10px 24px rgba(255,255,255,0.95), 12px 14px 28px rgba(13,13,13,0.14);
+  --p-card-shadow: 12px 14px 28px rgba(13,13,13,0.14);
   --p-input-bg: #F5F2EA;
 }
 
