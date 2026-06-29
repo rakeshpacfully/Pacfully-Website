@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { ArrowUpRight, ArrowRight, Box, PackageOpen, Tag, Sticker, Printer, Gift, Layers, Palette, Award, Workflow, Zap, Sprout, Sparkles, Cog, Pen, Truck, Sparkle, Gem, Cookie, Candy, Shirt, Package, Cpu } from "lucide-react";
+import { ArrowUpRight, ArrowRight, Box, PackageOpen, Tag, Sticker, Printer, Gift, Layers, Palette, Award, Workflow, Zap, Sprout, Sparkles, Cog, Pen, Truck, Sparkle, Gem, Cookie, Candy, Shirt, Package, Cpu, ShoppingBag } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { INDUSTRIES, SERVICES, WHY, STATS, SHOWCASE, PROCESS, TESTIMONIALS, FAQS } from "@/lib/data";
 import { FadeIn, SectionLabel } from "@/components/Shared";
 
-const ICONS = { Box, PackageOpen, Tag, Sticker, Printer, Gift, Layers, Palette, Award, Workflow, Zap, Sprout, Sparkles, Cog, Pen, Truck, Sparkle, Gem, Cookie, Candy, Shirt, Package, Cpu };
+const ICONS = { Box, PackageOpen, Tag, Sticker, Printer, Gift, Layers, Palette, Award, Workflow, Zap, Sprout, Sparkles, Cog, Pen, Truck, Sparkle, Gem, Cookie, Candy, Shirt, Package, Cpu, ShoppingBag };
 
 export default function Home() {
   const heroRef = useRef(null);
@@ -117,7 +117,7 @@ export default function Home() {
               const Icon = ICONS[s.icon] || Box;
               return (
                 <FadeIn key={s.slug} delay={i * 0.05}>
-                  <Link to="/services" data-testid={`service-card-${s.slug}`} className="group block h-full">
+                  <Link to={`/services#service-${s.slug}`} data-testid={`service-card-${s.slug}`} className="group block h-full">
                     <div className="relative h-full neo-card rounded-3xl p-7 transition-all duration-500 hover:-translate-y-1 hover:border-brand/30 hover:shadow-[0_0_40px_rgba(244,90,42,0.15)]">
                       <div className="w-12 h-12 rounded-2xl bg-brand/15 border border-brand/30 flex items-center justify-center mb-6 group-hover:bg-brand group-hover:text-white transition">
                         <Icon className="w-5 h-5 text-brand group-hover:text-white" />

@@ -39,14 +39,16 @@ export const INDUSTRIES = [
 ];
 
 export const SERVICES = [
-  { slug: "rigid-box", title: "Rigid Box Packaging", icon: "Box", desc: "Premium magnetic, drawer, lift-off, and bespoke rigid boxes engineered for luxury unboxing.", img: "https://images.pexels.com/photos/4271698/pexels-photo-4271698.jpeg" },
-  { slug: "corrugated", title: "Corrugated Boxes", icon: "PackageOpen", desc: "Durable shipping and mailer cartons in single, double and triple wall constructions.", img: "https://images.unsplash.com/photo-1595246007497-15e0ed4b8d96?w=1400" },
-  { slug: "labels", title: "Product Labels", icon: "Tag", desc: "Pressure-sensitive, shrink-sleeve, foil and security labels with variable data printing.", img: "https://images.unsplash.com/photo-1605718317361-f9326fd262ca?w=1400" },
-  { slug: "stickers", title: "Sticker Printing", icon: "Sticker", desc: "Vinyl, transparent, holographic, kiss-cut and die-cut stickers in any shape or size.", img: "https://images.unsplash.com/photo-1607344645866-009c320b63e0?w=1400" },
-  { slug: "offset", title: "Offset Printing", icon: "Printer", desc: "High-volume 5-color UV and conventional offset printing with razor-sharp registration.", img: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1400" },
-  { slug: "luxury-gift", title: "Luxury Gift Boxes", icon: "Gift", desc: "Bespoke gifting boxes with foiling, embossing, ribbon pulls and velvet inserts.", img: "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=1400" },
-  { slug: "monocartons", title: "Mono Cartons", icon: "Layers", desc: "Tuck-end, auto-lock, and seal-end folding cartons for FMCG and retail.", img: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1400" },
-  { slug: "design", title: "Packaging Design", icon: "Palette", desc: "Structural & graphic design, dielines, mockups, and material consultancy.", img: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=1400" },
+  { slug: "rigid-box", productSlug: "rigid-boxes", title: "Rigid Box Packaging", icon: "Box", desc: "Premium magnetic, drawer, lift-off, and bespoke rigid boxes engineered for luxury unboxing.", img: "https://images.pexels.com/photos/4271698/pexels-photo-4271698.jpeg" },
+  { slug: "corrugated", productSlug: "corrugated-boxes", title: "Corrugated Boxes", icon: "PackageOpen", desc: "Durable shipping and mailer cartons in single, double and triple wall constructions.", img: "https://images.unsplash.com/photo-1595246007497-15e0ed4b8d96?w=1400" },
+  { slug: "labels", productSlug: "labels", title: "Product Labels", icon: "Tag", desc: "Pressure-sensitive, shrink-sleeve, foil and security labels with variable data printing.", img: "https://images.unsplash.com/photo-1605718317361-f9326fd262ca?w=1400" },
+  { slug: "stickers", productSlug: "stickers", title: "Sticker Printing", icon: "Sticker", desc: "Vinyl, transparent, holographic, kiss-cut and die-cut stickers in any shape or size.", img: "https://images.unsplash.com/photo-1607344645866-009c320b63e0?w=1400" },
+  { slug: "paper-bags", productSlug: "paper-bags", title: "Paper Bags", icon: "ShoppingBag", desc: "Sustainable paper bags with twisted, rope, ribbon and die-cut handles for retail and luxury.", img: "https://images.unsplash.com/photo-1591455661123-8de4587b4b9d?w=1400" },
+  { slug: "ecommerce", productSlug: "ecommerce-packaging", title: "Ecommerce Packaging", icon: "Package", desc: "Mailer boxes, book wraps and subscription kits engineered for last-mile and unboxing.", img: "https://images.unsplash.com/photo-1575176647987-4c1a2e598950?w=1400" },
+  { slug: "offset", productSlug: null, title: "Offset Printing", icon: "Printer", desc: "High-volume 5-color UV and conventional offset printing with razor-sharp registration.", img: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1400" },
+  { slug: "luxury-gift", productSlug: "luxury-gift-boxes", title: "Luxury Gift Boxes", icon: "Gift", desc: "Bespoke gifting boxes with foiling, embossing, ribbon pulls and velvet inserts.", img: "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=1400" },
+  { slug: "monocartons", productSlug: "fmcg-monocartons", title: "Mono Cartons", icon: "Layers", desc: "Tuck-end, auto-lock, and seal-end folding cartons for FMCG and retail.", img: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1400" },
+  { slug: "design", productSlug: null, title: "Packaging Design", icon: "Palette", desc: "Structural & graphic design, dielines, mockups, and material consultancy.", img: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=1400" },
 ];
 
 export const WHY = [
@@ -107,6 +109,13 @@ export const PRODUCT_CATEGORIES = [
     name: "Rigid Boxes",
     short: "Luxury structural boxes",
     hero: "https://images.unsplash.com/photo-1607344645866-009c320b63e0?w=1600",
+    intro: "Premium packaging designed to elevate your product and brand. Rigid boxes offer exceptional strength, a luxurious feel, and premium finishes such as matte lamination, foil stamping, embossing, and Spot UV. Choose from a wide range of box styles to suit your product and branding requirements.",
+    introImages: [
+      "https://images.unsplash.com/photo-1607344645866-009c320b63e0?w=900",
+      "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=900",
+      "https://images.unsplash.com/photo-1583209814683-c023dd293cc6?w=900",
+      "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=900",
+    ],
     items: [
       "Magnetic Closure Rigid Boxes","Lift-off Lid Rigid Boxes","Drawer / Slide Rigid Boxes",
       "Shoulder Neck Rigid Boxes","Book Style Rigid Boxes","Hinged Lid Rigid Boxes",
@@ -120,6 +129,13 @@ export const PRODUCT_CATEGORIES = [
     name: "Corrugated Boxes",
     short: "Shipping & mailer cartons",
     hero: "https://images.unsplash.com/photo-1595246007497-15e0ed4b8d96?w=1600",
+    intro: "Strong, reliable packaging built for protection and shipping. Corrugated boxes provide excellent durability for storage, transportation, and e-commerce. Available in various constructions and board grades, they can be customized for strength, print quality, and functionality.",
+    introImages: [
+      "https://images.unsplash.com/photo-1595246007497-15e0ed4b8d96?w=900",
+      "https://images.unsplash.com/photo-1575176647987-4c1a2e598950?w=900",
+      "https://images.unsplash.com/photo-1530319067432-f2a729c03db5?w=900",
+      "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=900",
+    ],
     items: [
       "Regular Slotted Cartons (RSC)","Half Slotted Containers (HSC)","Full Overlap Slotted (FOL)",
       "Die-Cut Corrugated Boxes","Folder Type Boxes","Five Panel Folder Boxes",
@@ -133,6 +149,13 @@ export const PRODUCT_CATEGORIES = [
     name: "FMCG Monocartons",
     short: "Folding cartons for retail",
     hero: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1600",
+    intro: "Versatile folding cartons for everyday retail packaging. Monocartons combine cost-effectiveness with excellent print quality, making them ideal for high-volume products. Explore different carton structures to find the best fit for your packaging and assembly requirements.",
+    introImages: [
+      "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=900",
+      "https://images.unsplash.com/photo-1583209814683-c023dd293cc6?w=900",
+      "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=900",
+      "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=900",
+    ],
     items: [
       "Straight Tuck End (STE)","Reverse Tuck End (RTE)","Auto Lock Bottom","Crash Lock Bottom",
       "Seal End Cartons","Snap Lock Bottom","Tuck Top Auto Bottom","Sleeve Cartons",
@@ -146,6 +169,13 @@ export const PRODUCT_CATEGORIES = [
     name: "Labels",
     short: "Adhesive & specialty labels",
     hero: "https://images.unsplash.com/photo-1605718317361-f9326fd262ca?w=1600",
+    intro: "Labels that enhance branding, compliance, and product identification. From simple product labels to security and variable data labels, we offer high-quality printing with durable materials and premium finishing options for every application.",
+    introImages: [
+      "https://images.unsplash.com/photo-1605718317361-f9326fd262ca?w=900",
+      "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=900",
+      "https://images.unsplash.com/photo-1583209814683-c023dd293cc6?w=900",
+      "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=900",
+    ],
     items: [
       "Pressure Sensitive Labels","Self Adhesive Labels","Roll Form Labels","Sheet Labels",
       "Wrap Around Labels","Shrink Sleeve Labels","In-Mould Labels (IML)","Tamper Evident",
@@ -158,6 +188,13 @@ export const PRODUCT_CATEGORIES = [
     name: "Stickers",
     short: "Decals & branding stickers",
     hero: "https://images.unsplash.com/photo-1607344645866-009c320b63e0?w=1600",
+    intro: "Custom stickers for branding, promotions, and product decoration. Available in a variety of materials, adhesives, finishes, and cut styles, our stickers are designed to deliver excellent durability and visual appeal.",
+    introImages: [
+      "https://images.unsplash.com/photo-1607344645866-009c320b63e0?w=900",
+      "https://images.unsplash.com/photo-1605718317361-f9326fd262ca?w=900",
+      "https://images.unsplash.com/photo-1591455661123-8de4587b4b9d?w=900",
+      "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=900",
+    ],
     items: [
       "Die Cut Stickers","Kiss Cut Stickers","Vinyl Stickers","Paper Stickers",
       "Transparent Stickers","Hologram Stickers","Foil Stickers","Domed Stickers",
@@ -170,6 +207,13 @@ export const PRODUCT_CATEGORIES = [
     name: "Paper Bags",
     short: "Retail & luxury carriers",
     hero: "https://images.unsplash.com/photo-1591455661123-8de4587b4b9d?w=1600",
+    intro: "Sustainable paper bags that combine functionality with premium presentation. Choose from multiple handle options, paper types, and finishes to create packaging that complements your brand while reducing environmental impact.",
+    introImages: [
+      "https://images.unsplash.com/photo-1591455661123-8de4587b4b9d?w=900",
+      "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=900",
+      "https://images.unsplash.com/photo-1583209814683-c023dd293cc6?w=900",
+      "https://images.unsplash.com/photo-1607344645866-009c320b63e0?w=900",
+    ],
     items: [
       "Flat Paper Bags","SOS Paper Bags","Twisted Handle Bags","Rope Handle Bags",
       "Ribbon Handle Bags","Die Cut Handle Bags","D-Cut Paper Bags","V-Bottom Bags",
@@ -182,6 +226,13 @@ export const PRODUCT_CATEGORIES = [
     name: "Ecommerce Packaging",
     short: "Shipping-ready solutions",
     hero: "https://images.unsplash.com/photo-1575176647987-4c1a2e598950?w=1600",
+    intro: "Packaging designed to protect products throughout the delivery journey. Our e-commerce solutions focus on durability, efficient packing, and an enhanced unboxing experience while supporting your branding and logistics needs.",
+    introImages: [
+      "https://images.unsplash.com/photo-1575176647987-4c1a2e598950?w=900",
+      "https://images.unsplash.com/photo-1595246007497-15e0ed4b8d96?w=900",
+      "https://images.unsplash.com/photo-1530319067432-f2a729c03db5?w=900",
+      "https://images.unsplash.com/photo-1591455661123-8de4587b4b9d?w=900",
+    ],
     items: [
       "Corrugated Mailer Boxes","Roll End Mailer Boxes","Book Wrap Mailers","Shipping Cartons",
       "Postal Boxes","Self Locking Mailers","Return Mailer Boxes","Subscription Boxes",
@@ -194,6 +245,13 @@ export const PRODUCT_CATEGORIES = [
     name: "Luxury Gift Boxes",
     short: "Premium gifting structures",
     hero: "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=1600",
+    intro: "Premium gift packaging crafted to create memorable first impressions. Combining elegant designs, premium materials, and luxury finishes, our gift boxes add value to every product and enhance the overall customer experience.",
+    introImages: [
+      "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=900",
+      "https://images.unsplash.com/photo-1607344645866-009c320b63e0?w=900",
+      "https://images.unsplash.com/photo-1583209814683-c023dd293cc6?w=900",
+      "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=900",
+    ],
     items: [
       "Magnetic Gift Boxes","Drawer Gift Boxes","Book Style Gift Boxes","Lift-off Lid Gift Boxes",
       "Shoulder Neck Gift Boxes","Foldable Gift Boxes","Hinged Lid Gift Boxes","Hamper Gift Boxes",

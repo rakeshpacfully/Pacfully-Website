@@ -4,8 +4,10 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 export default function Layout({ children }) {
-  const { pathname } = useLocation();
-  useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" }); }, [pathname]);
+  const { pathname, hash } = useLocation();
+  useEffect(() => {
+    if (!hash) window.scrollTo({ top: 0, behavior: "instant" });
+  }, [pathname, hash]);
   return (
     <div className="min-h-screen bg-ink-900 text-white">
       <Navbar />
