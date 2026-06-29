@@ -320,10 +320,10 @@ export const INDUSTRIES_DETAIL = [
   {
     slug: "perfume",
     name: "Perfume & Fragrance",
-    img: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1600",
+    img: "https://images.unsplash.com/photo-1541643600914-78b084683601?w=1600",
     uses: ["Bottle rigid boxes","EDP magnetic boxes","Discovery sets","Outer sleeves"],
     desc: "Heirloom-grade rigid boxes with EVA inserts and luxury finishing for fragrance houses.",
-    overview: "Fragrance packaging that completes the sensory ritual. From shoulder-neck rigid boxes for couture EDP to magnetic discovery sets and foil-stamped outer sleeves — every Pacfully fragrance box is engineered to protect delicate flacons while elevating shelf and unboxing impact. We work with EVA, flock and rigid pulp inserts for ±0.5mm bottle tolerance.",
+    overview: "Fragrance packaging that completes the sensory ritual. From shoulder-neck rigid boxes engineered for couture EDP flacons to magnetic discovery sets, embossed outer sleeves and foil-stamped sample kits, every Pacfully fragrance box is built to protect delicate glass while elevating shelf presence and unboxing emotion. We craft EVA cradles, flocked velvet trays and rigid pulp inserts calibrated to ±0.5mm bottle tolerance — alongside hot foil monograms, soft-touch laminations and tamper-evident closures designed for premium fragrance houses, niche perfumers and luxury gifting brands worldwide.",
     solutions: ["rigid-boxes","luxury-gift-boxes","fmcg-monocartons","labels"],
     popularStyles: [
       { group: "Rigid Boxes", items: ["Shoulder Neck","Magnetic Closure","Lift-off Lid"] },
