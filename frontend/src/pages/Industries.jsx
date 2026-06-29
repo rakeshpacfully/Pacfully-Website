@@ -32,9 +32,14 @@ export default function Industries() {
                         <li key={u} className="text-sm text-white/80 flex items-center gap-3"><Check className="w-4 h-4 text-brand" />{u}</li>
                       ))}
                     </ul>
-                    <Link to="/get-quote" data-testid={`industry-quote-${i}`} className="mt-8 inline-flex items-center gap-2 border border-white/15 rounded-full px-6 py-3 text-sm hover:bg-white/5 transition">
-                      Get vertical-specific quote <ArrowRight className="w-4 h-4" />
-                    </Link>
+                    <div className="mt-8 flex flex-wrap gap-3">
+                      <Link to="/get-quote" data-testid={`industry-quote-${i}`} className="inline-flex items-center gap-2 bg-brand text-white rounded-full px-6 py-3 text-sm font-medium hover:bg-brand-600 transition shadow-[0_8px_24px_rgba(244,90,42,0.3)]">
+                        Get vertical-specific quote <ArrowRight className="w-4 h-4" />
+                      </Link>
+                      <Link to={`/industries/${ind.slug}`} data-testid={`industry-explore-${ind.slug}`} className="inline-flex items-center gap-2 border border-white/15 rounded-full px-6 py-3 text-sm hover:bg-white/5 hover:border-brand/40 transition">
+                        Explore Products <ArrowRight className="w-4 h-4" />
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </FadeIn>

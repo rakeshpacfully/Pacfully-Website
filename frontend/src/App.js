@@ -9,6 +9,7 @@ import Products from "@/pages/Products";
 import ProductCategory from "@/pages/ProductCategory";
 import CustomPackaging from "@/pages/CustomPackaging";
 import Industries from "@/pages/Industries";
+import IndustryDetail from "@/pages/IndustryDetail";
 import PlantCapacity from "@/pages/PlantCapacity";
 import Blog from "@/pages/Blog";
 import BlogPost from "@/pages/BlogPost";
@@ -28,6 +29,7 @@ function App() {
             <Route path="/products/:slug" element={<ProductCategory />} />
             <Route path="/custom-packaging" element={<CustomPackaging />} />
             <Route path="/industries" element={<Industries />} />
+            <Route path="/industries/:slug" element={<IndustryDetail />} />
             <Route path="/plant-capacity" element={<PlantCapacity />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
