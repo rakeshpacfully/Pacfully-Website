@@ -78,27 +78,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* INDUSTRIES MARQUEE */}
-      <section className="py-14 border-y border-white/5 overflow-hidden bg-ink-800/30">
-        <div className="max-w-[1400px] mx-auto px-6 md:px-10 mb-6">
-          <p className="text-xs uppercase tracking-[0.3em] text-white/40">Trusted across industries</p>
-        </div>
-        <div className="relative">
-          <div className="flex animate-marquee whitespace-nowrap gap-12">
-            {[...INDUSTRIES, ...INDUSTRIES].map((ind, i) => {
-              const Icon = ICONS[ind.icon] || Box;
-              return (
-                <div key={i} className="flex items-center gap-3 text-white/40">
-                  <Icon className="w-5 h-5" />
-                  <span className="font-display text-2xl tracking-tight">{ind.name}</span>
-                  <span className="text-white/10 mx-6">•</span>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
       {/* CLIENTS MARQUEE */}
       <section className="py-16 md:py-20 overflow-hidden" data-testid="clients-section">
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 mb-8 flex flex-col md:flex-row md:items-end justify-between gap-4">
