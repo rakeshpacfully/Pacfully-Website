@@ -48,7 +48,7 @@ export default function PlantCapacity() {
           </FadeIn>
           <FadeIn delay={0.1}>
             <div className="relative h-[480px] rounded-3xl overflow-hidden neo-card">
-              <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1600" alt="press" className="w-full h-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1600" alt="press" className="w-full h-full object-cover" />
             </div>
           </FadeIn>
         </div>

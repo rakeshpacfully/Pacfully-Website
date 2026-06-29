@@ -51,28 +51,20 @@ export default function ProductCategory() {
           </FadeIn>
 
           <FadeIn delay={0.15} className="lg:col-span-6">
-            <div className="relative h-[460px] md:h-[540px]">
-              {(cat.introImages || [cat.hero]).slice(0, 4).map((src, i) => {
-                const positions = [
-                  "absolute top-0 left-[6%] w-[58%] h-[58%]",
-                  "absolute top-[8%] right-0 w-[42%] h-[44%]",
-                  "absolute bottom-0 left-0 w-[44%] h-[44%]",
-                  "absolute bottom-[6%] right-[4%] w-[52%] h-[48%]",
-                ];
-                const floats = ["animate-float", "animate-float-rev", "animate-float-rev", "animate-float"];
-                return (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, scale: 0.9, y: 20 }}
-                    animate={{ opacity: 1, scale: 1, y: 0 }}
-                    transition={{ duration: 0.7, delay: 0.1 * i, ease: [0.22, 1, 0.36, 1] }}
-                    className={`${positions[i]} rounded-3xl overflow-hidden neo-card ${floats[i]}`}
-                    style={{ animationDelay: `${i * 0.7}s` }}
-                  >
-                    <img src={src} alt={`${cat.name} variant ${i + 1}`} className="w-full h-full object-cover" />
-                  </motion.div>
-                );
-              })}
+            <div className="relative h-[460px] md:h-[560px]">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+                className="absolute inset-0 rounded-[2rem] overflow-hidden neo-card glow-orange"
+              >
+                <img
+                  src={cat.hero}
+                  alt={cat.name}
+                  className="w-full h-full object-cover transition duration-[1200ms] hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-tr from-black/40 via-transparent to-transparent pointer-events-none" />
+              </motion.div>
               <div className="absolute bottom-6 right-6 z-10 px-4 py-2 rounded-full bg-brand text-white text-[10px] uppercase tracking-[0.25em] font-medium shadow-[0_8px_24px_rgba(244,90,42,0.45)]">
                 {cat.items.length} variants
               </div>

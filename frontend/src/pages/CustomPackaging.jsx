@@ -10,7 +10,7 @@ export default function CustomPackaging() {
         eyebrow="Custom Packaging"
         title="Engineered around your brand."
         sub="Every Pacfully project is bespoke. Choose your material, structure, finish and brand cues — we build the rest."
-        image="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=2000"
+        image="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=2000"
       />
 
       <section className="py-20 md:py-28">
@@ -78,7 +78,7 @@ export default function CustomPackaging() {
             </FadeIn>
             <FadeIn delay={0.1}>
               <div className="relative h-[560px] rounded-3xl overflow-hidden neo-card">
-                <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1600" alt="custom packaging" className="w-full h-full object-cover" />
+                <img src="https://images.unsplash.com/photo-1607344645866-009c320b63e0?w=1600" alt="custom packaging" className="w-full h-full object-cover" />
               </div>
             </FadeIn>
           </div>
