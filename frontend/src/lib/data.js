@@ -27,6 +27,12 @@ export const NAV = [
   { label: "Contact", path: "/contact" },
 ];
 
+export const CLIENTS = [
+  "Zoho", "TATA Electronics", "Foxconn", "Specsmakers", "AVT",
+  "Nandu Brand", "Oud AL Anfar Perfumes", "Cool Max", "Royce Chocolates",
+  "Nandhini Sweets", "Ganga Sweets", "A2B",
+];
+
 export const INDUSTRIES = [
   { name: "Cosmetics", icon: "Sparkles", img: "https://images.unsplash.com/photo-1583209814683-c023dd293cc6?w=1200" },
   { name: "Jewelry", icon: "Gem", img: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=1200" },
