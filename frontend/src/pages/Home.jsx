@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { ArrowUpRight, ArrowRight, Box, PackageOpen, Tag, Sticker, Printer, Gift, Layers, Palette, Award, Workflow, Zap, Sprout, Sparkles, Cog, Pen, Truck, Sparkle, Gem, Cookie, Candy, Shirt, Package, Cpu, ShoppingBag } from "lucide-react";
+import { ArrowUpRight, ArrowRight, Box, PackageOpen, Tag, Sticker, Printer, Gift, Layers, Palette, Award, Workflow, Zap, Sprout, Sparkles, Cog, Pen, Truck, Sparkle, Gem, Cookie, Candy, Shirt, Package, Cpu, ShoppingBag, SprayCan, Smartphone } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { INDUSTRIES, SERVICES, WHY, STATS, SHOWCASE, PROCESS, TESTIMONIALS, FAQS, CLIENTS } from "@/lib/data";
 import { FadeIn, SectionLabel } from "@/components/Shared";
 
-const ICONS = { Box, PackageOpen, Tag, Sticker, Printer, Gift, Layers, Palette, Award, Workflow, Zap, Sprout, Sparkles, Cog, Pen, Truck, Sparkle, Gem, Cookie, Candy, Shirt, Package, Cpu, ShoppingBag };
+const ICONS = { Box, PackageOpen, Tag, Sticker, Printer, Gift, Layers, Palette, Award, Workflow, Zap, Sprout, Sparkles, Cog, Pen, Truck, Sparkle, Gem, Cookie, Candy, Shirt, Package, Cpu, ShoppingBag, SprayCan, Smartphone };
 
 export default function Home() {
   const heroRef = useRef(null);
@@ -78,32 +78,35 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CLIENTS MARQUEE */}
-      <section className="py-16 md:py-20 overflow-hidden" data-testid="clients-section">
+      {/* INDUSTRIES MARQUEE */}
+      <section className="py-16 md:py-20 overflow-hidden" data-testid="industries-section">
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 mb-8 flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
-            <SectionLabel>Our clients</SectionLabel>
+            <SectionLabel>Trusted across industries</SectionLabel>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight mt-3 max-w-2xl leading-[1.05]">
-              Trusted by brands that demand precision.
+              Packaging engineered for every category.
             </h2>
           </div>
-          <p className="text-sm text-white/45 max-w-xs">From global tech to heritage sweet houses — Pacfully ships for ambitious brands across categories.</p>
+          <p className="text-sm text-white/45 max-w-xs">From luxury cosmetics and fragrance flacons to mobile devices and festive hampers — we build for every shelf.</p>
         </div>
 
-        <div className="relative" data-testid="clients-marquee">
+        <div className="relative" data-testid="industries-marquee">
           <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-ink-900 to-transparent z-10" />
           <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-ink-900 to-transparent z-10" />
           <div className="flex animate-marquee whitespace-nowrap gap-4">
-            {[...CLIENTS, ...CLIENTS].map((c, i) => (
-              <div
-                key={i}
-                data-testid={`client-card-${i}`}
-                className="shrink-0 flex items-center gap-3 px-7 py-4 rounded-2xl neo-card hover:border-brand/40 transition group"
-              >
-                <span className="w-2 h-2 rounded-full bg-brand/60 group-hover:bg-brand group-hover:shadow-[0_0_12px_rgba(244,90,42,0.8)] transition" />
-                <span className="font-display text-xl md:text-2xl tracking-tight text-white/85 group-hover:text-white transition">{c}</span>
-              </div>
-            ))}
+            {[...INDUSTRIES, ...INDUSTRIES].map((ind, i) => {
+              const Icon = ICONS[ind.icon] || Box;
+              return (
+                <div
+                  key={i}
+                  data-testid={`industry-card-${i}`}
+                  className="shrink-0 flex items-center gap-3 px-7 py-4 rounded-2xl neo-card hover:border-brand/40 transition group"
+                >
+                  <Icon className="w-5 h-5 text-brand/70 group-hover:text-brand transition" />
+                  <span className="font-display text-xl md:text-2xl tracking-tight text-white/85 group-hover:text-white transition">{ind.name}</span>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

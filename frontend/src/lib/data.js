@@ -35,12 +35,14 @@ export const CLIENTS = [
 
 export const INDUSTRIES = [
   { name: "Cosmetics", icon: "Sparkles", img: "https://images.unsplash.com/photo-1583209814683-c023dd293cc6?w=1200" },
+  { name: "Perfume", icon: "SprayCan", img: "https://images.unsplash.com/photo-1541643600914-78b084683601?w=1200" },
   { name: "Jewelry", icon: "Gem", img: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=1200" },
   { name: "Food & Sweets", icon: "Cookie", img: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=1200" },
   { name: "Chocolate", icon: "Candy", img: "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=1200" },
   { name: "Apparel", icon: "Shirt", img: "https://images.unsplash.com/photo-1595246007497-15e0ed4b8d96?w=1200" },
   { name: "Ecommerce", icon: "Package", img: "https://images.unsplash.com/photo-1575176647987-4c1a2e598950?w=1200" },
   { name: "Electronics", icon: "Cpu", img: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200" },
+  { name: "Mobile Phones", icon: "Smartphone", img: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200" },
   { name: "Corporate Gifting", icon: "Gift", img: "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=1200" },
 ];
 
