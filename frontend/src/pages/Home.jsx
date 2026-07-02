@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { ArrowUpRight, ArrowRight, Box, PackageOpen, Tag, Sticker, Printer, Gift, Layers, Palette, Award, Workflow, Zap, Sprout, Sparkles, Cog, Pen, Truck, Sparkle, Gem, Cookie, Candy, Shirt, Package, Cpu, ShoppingBag, SprayCan, Smartphone } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { INDUSTRIES, SERVICES, WHY, STATS, SHOWCASE, PROCESS, TESTIMONIALS, FAQS, CLIENTS } from "@/lib/data";
+import { INDUSTRIES, SERVICES, WHY, STATS, SHOWCASE, PROCESS, TESTIMONIALS, FAQS } from "@/lib/data";
 import { FadeIn, SectionLabel } from "@/components/Shared";
 
 const ICONS = { Box, PackageOpen, Tag, Sticker, Printer, Gift, Layers, Palette, Award, Workflow, Zap, Sprout, Sparkles, Cog, Pen, Truck, Sparkle, Gem, Cookie, Candy, Shirt, Package, Cpu, ShoppingBag, SprayCan, Smartphone };
