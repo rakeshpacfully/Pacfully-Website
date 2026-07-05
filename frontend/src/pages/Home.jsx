@@ -136,14 +136,15 @@ export default function Home() {
                     data-testid={`home-industry-card-${ind.slug}`}
                     className="group block h-full"
                   >
-                    <div className="relative rounded-3xl overflow-hidden neo-card h-[280px] md:h-[320px]">
+                    <div className="relative rounded-3xl overflow-hidden neo-card h-[280px] md:h-[320px] transition-all duration-500 group-hover:scale-[1.03] group-hover:shadow-[0_0_60px_rgba(244,90,42,0.45)] group-hover:border-brand/40">
                       <img
                         src={ind.img}
                         alt={ind.name}
                         className="absolute inset-0 w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 group-hover:scale-110 transition duration-[900ms]"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
-                      <div className="absolute top-4 left-4 w-10 h-10 rounded-xl bg-white/10 backdrop-blur-md border border-white/15 flex items-center justify-center">
+                      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-t from-brand/50 via-brand/10 to-transparent mix-blend-overlay" />
+                      <div className="absolute top-4 left-4 w-10 h-10 rounded-xl bg-white/10 backdrop-blur-md border border-white/15 flex items-center justify-center group-hover:bg-brand group-hover:border-brand transition">
                         <Icon className="w-4 h-4 text-white" />
                       </div>
                       <div className="absolute bottom-0 inset-x-0 p-5 flex items-end justify-between">
@@ -151,7 +152,7 @@ export default function Home() {
                           <p className="text-[10px] uppercase tracking-[0.3em] text-brand mb-1">Explore</p>
                           <h3 className="font-display text-xl md:text-2xl font-medium leading-tight text-white">{ind.name}</h3>
                         </div>
-                        <ArrowUpRight className="w-5 h-5 text-white/60 group-hover:text-brand group-hover:rotate-45 transition" />
+                        <ArrowUpRight className="w-5 h-5 text-white/60 group-hover:text-white group-hover:rotate-45 transition" />
                       </div>
                     </div>
                   </Link>
