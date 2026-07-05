@@ -111,6 +111,57 @@ export default function Home() {
         </div>
       </section>
 
+      {/* INDUSTRIES CARDS GRID */}
+      <section className="py-20 md:py-28 bg-ink-800/30 border-y border-white/5" data-testid="industries-grid-section">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-10">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+            <div>
+              <SectionLabel>Industries we serve</SectionLabel>
+              <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight mt-4 max-w-2xl leading-[1.05]">
+                Ten categories.<br />One packaging house.
+              </h2>
+            </div>
+            <Link to="/industries" className="link-underline text-sm text-white/70 inline-flex items-center gap-2 self-start" data-testid="industries-grid-view-all">
+              Explore all industries <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-5">
+            {INDUSTRIES.map((ind, i) => {
+              const Icon = ICONS[ind.icon] || Box;
+              return (
+                <FadeIn key={ind.name} delay={(i % 5) * 0.05}>
+                  <Link
+                    to={`/industries/${ind.slug}`}
+                    data-testid={`home-industry-card-${ind.slug}`}
+                    className="group block h-full"
+                  >
+                    <div className="relative rounded-3xl overflow-hidden neo-card h-[280px] md:h-[320px]">
+                      <img
+                        src={ind.img}
+                        alt={ind.name}
+                        className="absolute inset-0 w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 group-hover:scale-110 transition duration-[900ms]"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
+                      <div className="absolute top-4 left-4 w-10 h-10 rounded-xl bg-white/10 backdrop-blur-md border border-white/15 flex items-center justify-center">
+                        <Icon className="w-4 h-4 text-white" />
+                      </div>
+                      <div className="absolute bottom-0 inset-x-0 p-5 flex items-end justify-between">
+                        <div>
+                          <p className="text-[10px] uppercase tracking-[0.3em] text-brand mb-1">Explore</p>
+                          <h3 className="font-display text-xl md:text-2xl font-medium leading-tight text-white">{ind.name}</h3>
+                        </div>
+                        <ArrowUpRight className="w-5 h-5 text-white/60 group-hover:text-brand group-hover:rotate-45 transition" />
+                      </div>
+                    </div>
+                  </Link>
+                </FadeIn>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* SERVICES PREVIEW */}
       <section className="py-24 md:py-32" data-testid="services-preview-section">
         <div className="max-w-[1400px] mx-auto px-6 md:px-10">
